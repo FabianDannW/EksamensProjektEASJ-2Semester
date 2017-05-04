@@ -9,7 +9,7 @@
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
-    <Grid Background="#FF918989" Height="1085">
+    <Grid Background="#FF918989">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="*" />
@@ -37,7 +37,7 @@
 
         </Grid.RowDefinitions>
         
-        <Button x:Name="Search" Content="Search" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="85" Width="320">
+        <Button x:Name="Search" Content="Søg" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="85" Width="320">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:NavigateToPageAction TargetPage="Projekt.View.Overview"/>
@@ -45,7 +45,7 @@
             </interactivity:Interaction.Behaviors>
         </Button>
         
-        <Button x:Name="Tilføj" Content="AddOrder" IsEnabled="False" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="85" Width="320" />
+        <Button x:Name="Tilføj" Content="Tilføj Ordre" IsEnabled="False" Grid.Column="3" Grid.Row="1" HorizontalAlignment="Center" Height="85" Width="320" />
        
         <Button x:Name="Gem" Content="Gem" Grid.Column="4" Grid.Row="11" HorizontalAlignment="Center" Height="85" Width="320"  >
             <interactivity:Interaction.Behaviors>
