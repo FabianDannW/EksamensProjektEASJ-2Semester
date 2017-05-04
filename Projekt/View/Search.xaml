@@ -38,15 +38,15 @@
 
         </Grid.RowDefinitions>
 
-        <Button x:Name="button" IsEnabled="False"  Content="Search" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" Height="85" Margin="0,0,0,0" Width="274"/>
-        <Button x:Name="button1" Content="Add Order" Grid.Column="3" Grid.Row="1" FontSize="24" HorizontalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274">
+        <Button x:Name="button" IsEnabled="False"  Content="Søg" Grid.Column="2" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" Height="85" Margin="0,0,0,0" Width="274"/>
+        <Button x:Name="button1" Content="Tilføj Ordre" Grid.Column="3" Grid.Row="1" FontSize="24" HorizontalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:NavigateToPageAction TargetPage="Projekt.View.AddOrder"/>
                 </core:EventTriggerBehavior>
             </interactivity:Interaction.Behaviors>
         </Button>
-        <Button x:Name="button2" Content="Overview" Grid.Column="4" Grid.Row="1" FontSize="24" HorizontalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274">
+        <Button x:Name="button2" Content="Oversigt" Grid.Column="4" Grid.Row="1" FontSize="24" HorizontalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:NavigateToPageAction TargetPage="Projekt.View.Overview"/>
@@ -55,9 +55,9 @@
         </Button>
         <TextBlock x:Name="Varenr" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="4" TextWrapping="Wrap" Text="Vare Nr." FontSize="36"/>
         <TextBlock x:Name="VareNavn" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Row="7" TextWrapping="Wrap" Text="Varenavn." FontSize="36"/>
-        <TextBox x:Name="Varenr1" Grid.Column="3" Grid.Row="7" TextAlignment="Center" TextWrapping="Wrap" Text="TextBox" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="vare" Grid.Column="3" Grid.Row="4" TextAlignment="Center"  TextWrapping="Wrap" Text="TextBox" Grid.ColumnSpan="2"/>
-        <Button x:Name="button3" Content="Search" Grid.Column="5" HorizontalAlignment="Center" Grid.Row="11" VerticalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274" FontSize="36">
+        <TextBox x:Name="Varenr1" Grid.Column="3" Grid.Row="7" TextAlignment="Center" TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="vare" Grid.Column="3" Grid.Row="4" TextAlignment="Center"  TextWrapping="Wrap" Text="" Grid.ColumnSpan="2"/>
+        <Button x:Name="Søg" Content="Søg" Grid.Column="5" HorizontalAlignment="Center" Grid.Row="10" VerticalAlignment="Center" Height="85" Margin="0,0,0,0" Width="274" FontSize="36">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:NavigateToPageAction TargetPage="Projekt.View.Overview"/>

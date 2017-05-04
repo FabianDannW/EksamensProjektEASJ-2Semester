@@ -9,9 +9,9 @@
     xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d">
 
-    <Grid Background="#FF918989" Height="1085">
+    <Grid Background="#FF918989" Height="Auto">
 
-        <Grid BorderThickness="1" BorderBrush="White" Margin="615,120,70,120" Padding="0" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
+        <Grid BorderThickness="2,1,2,2" BorderBrush="White" Margin="615,120,70,410" Padding="0" ScrollViewer.HorizontalScrollBarVisibility="Hidden">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
@@ -28,7 +28,7 @@
                 <RowDefinition Height="*" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
-            
+
             <TextBlock x:Name="textBlock"   TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="VareNr"/>
             <TextBlock x:Name="textBlock1"  TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Beskrivelse" Grid.Column="1"/>
             <TextBlock x:Name="textBlock2"  TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Text="Antal" Grid.Column="2"/>
@@ -38,47 +38,42 @@
 
         </Grid>
 
-        <Grid HorizontalAlignment="Left" Width="550" Margin="30,30,0,120" BorderThickness="2" BorderBrush="White">
+        <Grid HorizontalAlignment="Left" Width="550" Margin="30,10,0,20" BorderBrush="White" BorderThickness="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="56" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
-                <RowDefinition Height="55" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+
 
             </Grid.RowDefinitions>
-            
+
             <TextBox x:Name="Search" SelectedText="Search" TextAlignment="Center" TextWrapping="Wrap" Text="" Grid.Row="1" Grid.Column="1" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
-            <Button x:Name="button" Content="Button" Grid.Row="4"  Width="183" />
-            <Button x:Name="button1" Content="Button" Grid.Row="5" Width="183" />
-            <Button x:Name="button2" Content="Button" Grid.Row="6" Width="183" />
-            <Button x:Name="button3" Content="Button" Grid.Row="7" Width="183" />
-            <Button x:Name="button4" Content="Button" Grid.Row="8" Width="183" />
-            <Button x:Name="button5" Content="Button" Grid.Row="9" Width="183" />
-            <Button x:Name="button6" Content="Button" Grid.Row="10" Width="183"/>
-            <Button x:Name="button7" Content="Button" Grid.Row="11" Width="183"/>
-            <Button x:Name="button8" Content="Button" Grid.Row="12" Width="183"/>
-            <Button x:Name="button9" Content="Button" Grid.Row="13" Width="183"/>
-            <Button x:Name="button10" Content="Button" Grid.Row="14" Width="183"/>
+            <Button x:Name="button" Content="Button" Grid.Row="3"  Width="183" />
+            <Button x:Name="button1" Content="Button" Grid.Row="4" Width="183" />
+            <Button x:Name="button2" Content="Button" Grid.Row="5" Width="183" />
+            <Button x:Name="button3" Content="Button" Grid.Row="6" Width="183" />
+            <Button x:Name="button4" Content="Button" Grid.Row="7" Width="183" />
+            <Button x:Name="button5" Content="Button" Grid.Row="8" Width="183" />
+            <Button x:Name="button6" Content="Button" Grid.Row="9" Width="183"/>
+            <Button x:Name="button7" Content="Button" Grid.Row="10" Width="183"/>
+            <Button x:Name="button8" Content="Button" Grid.Row="11" Width="183"/>
+
         </Grid>
-        <Button x:Name="button11" Content="Tilbage" HorizontalAlignment="Right" Margin="0,48,223,0" VerticalAlignment="Top" Width="210">
+        <Button x:Name="button11" Content="Tilbage" HorizontalAlignment="Right" Margin="0,563,200,0" VerticalAlignment="Top" Width="210">
             <interactivity:Interaction.Behaviors>
                 <core:EventTriggerBehavior EventName="Click">
                     <core:NavigateToPageAction TargetPage="Projekt.View.Search"/>
