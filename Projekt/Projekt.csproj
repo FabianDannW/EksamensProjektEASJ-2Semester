@@ -99,7 +99,6 @@
     <Compile Include="Converter\DateTimeConverter.cs" />
     <Compile Include="Handler\Handler.cs" />
     <Compile Include="Model\Customer.cs" />
-    <Compile Include="PersistencyService\PersistencyService.cs" />
     <Compile Include="View\AddOrder.xaml.cs">
       <DependentUpon>AddOrder.xaml</DependentUpon>
     </Compile>
