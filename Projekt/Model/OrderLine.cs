@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Projekt.Model
 {
-    class OrdreLine
+    class OrderLine
     {
     }
 }
