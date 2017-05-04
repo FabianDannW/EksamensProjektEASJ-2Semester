@@ -8,5 +8,9 @@ namespace Projekt.Model
 {
     class Ordre
     {
+        public int ordreNr { get; set; }
+        public DateTime DateTime { get; set; }
+        public string description { get; set; }
+
     }
 }
