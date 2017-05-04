@@ -7,16 +7,9 @@ using System.Windows.Input;
 
 namespace Eventmaker.Common
 {
-    /// <summary>
-    /// A command whose sole purpose is to relay its functionality 
-    /// to other objects by invoking delegates. 
-    /// The default return value for the CanExecute method is 'true'.
-    /// <see cref="RaiseCanExecuteChanged"/> needs to be called whenever
-    /// <see cref="CanExecute"/> is expected to return a different value.
-    /// </summary>
-    public class RelayCommand : ICommand
+    class RelayArgCommand<T> : ICommand
     {
-        private readonly Action _execute;
+        private readonly Action<T> _execute;
         private readonly Func<bool> _canExecute;
 
         /// <summary>
@@ -28,7 +21,7 @@ namespace Eventmaker.Common
         /// Creates a new command that can always execute.
         /// </summary>
         /// <param name="execute">The execution logic.</param>
-        public RelayCommand(Action execute)
+        public RelayArgCommand(Action<T> execute)
             : this(execute, null)
         {
         }
@@ -38,7 +31,7 @@ namespace Eventmaker.Common
         /// </summary>
         /// <param name="execute">The execution logic.</param>
         /// <param name="canExecute">The execution status logic.</param>
-        public RelayCommand(Action execute, Func<bool> canExecute)
+        public RelayArgCommand(Action<T> execute, Func<bool> canExecute)
         {
             if (execute == null)
                 throw new ArgumentNullException("execute");
@@ -55,6 +48,7 @@ namespace Eventmaker.Common
         /// <returns>true if this command can be executed; otherwise, false.</returns>
         public bool CanExecute(object parameter)
         {
+            if (!typeof(T).Equals(parameter.GetType())) return false;  //If the parameters type is not equal to Type T return false
             return _canExecute == null ? true : _canExecute();
         }
 
@@ -66,7 +60,7 @@ namespace Eventmaker.Common
         /// </param>
         public void Execute(object parameter)
         {
-            _execute();
+            _execute((T)parameter);
         }
 
         /// <summary>
