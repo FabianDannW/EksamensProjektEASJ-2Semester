@@ -96,6 +96,10 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Customer.cs" />
+    <Compile Include="Model\Ordre.cs" />
+    <Compile Include="Model\OrdreLine.cs" />
+    <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ProductPart.cs" />
     <Compile Include="View\AddOrder.xaml.cs">
       <DependentUpon>AddOrder.xaml</DependentUpon>
     </Compile>
