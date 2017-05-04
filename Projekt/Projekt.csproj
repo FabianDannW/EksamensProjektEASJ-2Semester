@@ -95,14 +95,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\RelayArgCommand.cs" />
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Converter\DateTimeConverter.cs" />
-    <Compile Include="Handler\Handler.cs" />
     <Compile Include="Model\Customer.cs" />
     <Compile Include="Model\Ordre.cs" />
     <Compile Include="Model\OrdreLine.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductPart.cs" />
+    <Compile Include="PersistencyService\PersistencyService.cs" />
     <Compile Include="View\AddOrder.xaml.cs">
       <DependentUpon>AddOrder.xaml</DependentUpon>
     </Compile>
@@ -156,6 +157,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Handler\" />
     <Folder Include="ViewModel\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
