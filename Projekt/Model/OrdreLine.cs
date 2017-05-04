@@ -8,5 +8,7 @@ namespace Projekt.Model
 {
     class OrdreLine
     {
+        public int ordreLineNr { get; set; }
+
     }
 }
