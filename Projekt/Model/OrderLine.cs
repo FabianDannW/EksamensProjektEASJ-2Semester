@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Projekt.Model
 {
-    class Ordre
+    class OrderLine
     {
-        public int ordreNr { get; set; }
-        public DateTime DateTime { get; set; }
-        public string description { get; set; }
+        public int ordreLineNr { get; set; }
 
     }
 }

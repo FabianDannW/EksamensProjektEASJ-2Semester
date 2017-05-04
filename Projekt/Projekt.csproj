@@ -99,8 +99,8 @@
     <Compile Include="Common\RelayCommand.cs" />
     <Compile Include="Converter\DateTimeConverter.cs" />
     <Compile Include="Model\Customer.cs" />
-    <Compile Include="Model\Ordre.cs" />
-    <Compile Include="Model\OrdreLine.cs" />
+    <Compile Include="Model\Order.cs" />
+    <Compile Include="Model\OrderLine.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Model\ProductPart.cs" />
     <Compile Include="PersistencyService\PersistencyService.cs" />
