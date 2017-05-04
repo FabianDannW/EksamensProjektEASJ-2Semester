@@ -8,5 +8,11 @@ namespace Projekt.Model
 {
     class Customer
     {
+        private String Name;
+        private int PhoneNr;
+        private int CustomerNr;
+        private String Address;
+        private String Email;
+
     }
 }
