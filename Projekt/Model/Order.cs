@@ -8,9 +8,9 @@ namespace Projekt.Model
 {
     class Order
     {
-        public int orderNr { get; set; }
+        public int OrderNr { get; set; }
         public DateTime DateTime { get; set; }
-        public string description { get; set; }
+        public string Description { get; set; }
 
     }
 }
