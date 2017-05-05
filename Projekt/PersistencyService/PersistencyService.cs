@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Projekt.PersistencyService
+namespace SportDatabase.PersistencyService
 {
     class PersistencyService
     {
